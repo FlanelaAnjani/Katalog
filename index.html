@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <header class="header" id="home">
+        <a href="#home" class="logo">SHOES<span>GALLERY.</span></a>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#gallery">galeri</a>
+            <a href="#about">tentang</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">STEP INTO YOUR STYLE</p>
+            <h1>find your<br>perfect <span>shoes.</span></h1>
+            <p>koleksi sepatu pilihan dari adidas, puma, dan nike.</p>
+            <a href="#gallery" class="hero-button">lihat koleksi</a>
+        </div>
+    </section>
+
+    <main class="container" id="gallery">
+        <div class="section-heading">
+            <p class="subtitle">OUR COLLECTION</p>
+            <h2>galeri sepatu</h2>
+            <p>pilih sepatu favoritmu dari koleksi berikut.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-brand="semua">semua</button>
+            <button class="filter-btn" data-brand="adidas">adidas</button>
+            <button class="filter-btn" data-brand="puma">puma</button>
+            <button class="filter-btn" data-brand="nike">nike</button>
+        </div>
+
+        <div class="gallery">
+
+            <!-- adidas -->
+            <article class="shoe-card" data-brand="adidas">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                         alt="adidas samba" loading="lazy">
+                    <span class="brand-tag">ADIDAS</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">adidas</p>
+                    <h3>samba</h3>
+                    <p class="description">sepatu klasik dengan gaya kasual.</p>
+                    <p class="price">Rp1.500.000</p>
+                    <a href="#detail-samba" class="detail-link" data-id="samba">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="adidas">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600"
+                         alt="adidas adizero evo sl black iron" loading="lazy">
+                    <span class="brand-tag">ADIDAS</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">adidas</p>
+                    <h3>adizero evo sl black iron</h3>
+                    <p class="description">sepatu bergaya sporty untuk aktivitas lari.</p>
+                    <p class="price">Rp2.300.000</p>
+                    <a href="#detail-evo-black" class="detail-link" data-id="evo-black">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="adidas">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=600"
+                         alt="adidas adizero evo sl white" loading="lazy">
+                    <span class="brand-tag">ADIDAS</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">adidas</p>
+                    <h3>adizero evo sl men's shoes white</h3>
+                    <p class="description">sepatu putih dengan tampilan sporty.</p>
+                    <p class="price">Rp2.300.000</p>
+                    <a href="#detail-evo-white" class="detail-link" data-id="evo-white">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <!-- puma -->
+            <article class="shoe-card" data-brand="puma">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600"
+                         alt="puma caven skate white dark green" loading="lazy">
+                    <span class="brand-tag">PUMA</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">puma</p>
+                    <h3>caven skate shoes white dark green</h3>
+                    <p class="description">sepatu low top dengan gaya skate kasual.</p>
+                    <p class="price">Rp900.000</p>
+                    <a href="#detail-caven" class="detail-link" data-id="caven">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="puma">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600"
+                         alt="puma rickie classic white cool light gray" loading="lazy">
+                    <span class="brand-tag">PUMA</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">puma</p>
+                    <h3>rickie classic white cool light gray</h3>
+                    <p class="description">sepatu kasual dengan warna netral.</p>
+                    <p class="price">Rp800.000</p>
+                    <a href="#detail-rickie" class="detail-link" data-id="rickie">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="puma">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600"
+                         alt="puma speedcat black mauve mist pink" loading="lazy">
+                    <span class="brand-tag">PUMA</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">puma</p>
+                    <h3>speedcat black mauve mist pink</h3>
+                    <p class="description">gaya ramping dengan nuansa sporty.</p>
+                    <p class="price">Rp1.700.000</p>
+                    <a href="#detail-speedcat" class="detail-link" data-id="speedcat">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <!-- nike -->
+            <article class="shoe-card" data-brand="nike">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600"
+                         alt="nike dunk low retro grey fog" loading="lazy">
+                    <span class="brand-tag">NIKE</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">nike</p>
+                    <h3>dunk low retro grey fog</h3>
+                    <p class="description">sepatu low top dengan gaya streetwear.</p>
+                    <p class="price">Rp1.600.000</p>
+                    <a href="#detail-dunk" class="detail-link" data-id="dunk">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="nike">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=600"
+                         alt="nike shox r4 black metallic silver" loading="lazy">
+                    <span class="brand-tag">NIKE</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">nike</p>
+                    <h3>shox r4 black metallic silver</h3>
+                    <p class="description">desain futuristik dengan tampilan sporty.</p>
+                    <p class="price">Rp2.400.000</p>
+                    <a href="#detail-shox" class="detail-link" data-id="shox">lihat detail ↗</a>
+                </div>
+            </article>
+
+            <article class="shoe-card" data-brand="nike">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                         alt="nike air force 1 white black" loading="lazy">
+                    <span class="brand-tag">NIKE</span>
+                </div>
+                <div class="shoe-info">
+                    <p class="category">nike</p>
+                    <h3>air force 1 white black</h3>
+                    <p class="description">sepatu ikonik untuk gaya sehari-hari.</p>
+                    <p class="price">Rp1.500.000</p>
+                    <a href="#detail-af1" class="detail-link" data-id="af1">lihat detail ↗</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- bagian detail sepatu -->
+    <section class="detail-panel" id="detail-panel" hidden>
+        <div class="detail-content">
+            <a href="#gallery" class="back-link" id="close-detail">← kembali ke galeri</a>
+            <img id="detail-image" src="" alt="foto sepatu">
+            <div class="detail-info">
+                <p class="subtitle" id="detail-brand">SHOES COLLECTION</p>
+                <h2 id="detail-name"></h2>
+                <p id="detail-description"></p>
+                <p class="price" id="detail-price"></p>
+                <p class="detail-note">harga di halaman ini hanya contoh untuk tugas galeri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <p class="subtitle">ABOUT US</p>
+        <h2>tentang shoes gallery</h2>
+        <p>shoes gallery adalah halaman katalog sepatu yang menampilkan pilihan produk adidas, puma, dan nike dalam satu tempat.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 shoes gallery | dibuat untuk tugas rpl</p>
+    </footer>
+
+</body>
+</html>
